@@ -31,6 +31,7 @@ export default {
       type: Boolean,
       default: true
     },
+    maskClass: String,
     isTransparent: Boolean,
     hideOnBlur: {
       type: Boolean,
@@ -67,6 +68,7 @@ export default {
       const _this = this
       this.popup = new Popup({
         showMask: _this.showMask,
+        maskClass: _this.maskClass,
         container: _this.$el,
         hideOnBlur: _this.hideOnBlur,
         onOpen () {
